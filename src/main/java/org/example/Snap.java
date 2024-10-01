@@ -46,4 +46,11 @@ public class Snap extends CardGame {
         scanner.close();
     }
 
+    private boolean checkForSnap() {
+        long startTime = System.currentTimeMillis();
+        String userInput = scanner.nextLine();
 
+        long endTime = System.currentTimeMillis();
+        return userInput.equalsIgnoreCase("snap") && (endTime - startTime) <= 2000;
+    }
+}
