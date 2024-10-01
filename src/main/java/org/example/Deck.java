@@ -23,16 +23,5 @@ public class Deck {
                 value++;
             }
         }
-    }
 
-    public Card dealCard() {
-        if (!deckOfCards.isEmpty()) {
-            return deckOfCards.remove(0); // Remove the card from the top of the deck
-        }
-        return null; // No cards left
-    }
-
-    public void shuffle() {
-        Collections.shuffle(deckOfCards); // Shuffle the deck
-    }
 }
